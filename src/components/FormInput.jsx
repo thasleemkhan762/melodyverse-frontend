@@ -10,8 +10,8 @@ const FormInput = ({ label, type, name, value, onChange, errorMessage, required,
   };
 
   return (
-    <div className="mb-4 relative">
-      <label className="block text-sm font-medium text-gray-300">{label}</label>
+    <div className="mb-6 relative">
+      <label className="block font-bold text-gray-400">{label}</label>
       <input
         type={type}
         name={name}
@@ -21,7 +21,7 @@ const FormInput = ({ label, type, name, value, onChange, errorMessage, required,
         pattern={pattern}
         onBlur={handleFocus}
         focused={focused.toString()}
-        className={`mt-1 p-2 w-full rounded-md border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none ${
+        className={`mt-1 p-2 w-full rounded-md border bg-gray-900 border-gray-300 focus:outline-none focus:border-pink-500 text-white ${
           touched && !value ? 'border-red-500' : ''
         }`}
       />
