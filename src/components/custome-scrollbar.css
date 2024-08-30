@@ -1,4 +1,4 @@
-/* custom-scrollbar.css */
+
 
 /* For Webkit Browsers (Chrome, Safari) */
 ::-webkit-scrollbar {
@@ -63,7 +63,7 @@
 }
   
 
-// music player popoup
+
 @keyframes popupIn {
     from {
       opacity: 0;
